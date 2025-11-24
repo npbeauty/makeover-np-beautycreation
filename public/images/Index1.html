@@ -1,0 +1,626 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NP Beauty Creation — Home</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    :root{--accent:#ff4da6;--muted:#6c757d;--bg:#fff7fb}
+    *{box-sizing:border-box}
+    body{font-family: Roboto, system-ui, -apple-system, "Segoe UI", Arial; margin:0; color:#222; background:#fff;}
+    .hero{background:linear-gradient(135deg,#ff69b4 0%, #ffd700 100%); color:#fff; text-align:center; padding:80px 0;}
+    .hero h1{font-family:'Playfair Display',serif; font-size:2.4rem; margin-bottom:.4rem}
+    .section{padding:48px 0}
+    .service-card{border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); padding:18px; transition:transform .25s; background:#fff}
+    .service-card:hover{transform:translateY(-6px)}
+    .price{font-weight:700; color:var(--accent)}
+    #selectedServices{min-height:2rem; padding:.6rem; border:1px dashed #eee; border-radius:6px; background:#fff}
+    footer{background:#222; color:#fff; padding:28px 0; text-align:center; margin-top:36px}
+    .small-muted{color:var(--muted); font-size:.9rem}
+    .badge-min{background:#fff;color:#ff4da6;border:1px solid #ff4da6;padding:.25rem .5rem;border-radius:999px}
+    @media (min-width:992px){
+      .services-grid .service-card{height:100%}
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NP Beauty Creation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="policies.html">Policies</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to NP Beauty Creation</h1>
+      <p style="font-size:1.05rem; margin:0">Transform your look with our expert beauty services — book online in seconds</p>
+      <a href="#booking" class="btn btn-light mt-3">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+
+  <!-- Services Section with Background Slideshow & Parallax -->
+<section id="services" class="py-5 position-relative overflow-hidden">
+  <!-- Slideshow Background -->
+  <div class="services-bg-slider parallax-bg"></div>
+
+  <div class="container position-relative">
+    <h2 class="mb-4">Our Services</h2>
+    <div class="row g-3 services-grid">
+      <!-- Haircut & Styling -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Haircut & Styling</h5>
+          <p class="small-muted">Professional haircut and styling</p>
+          <p class="price" data-price="500">Starting ₹500</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Hair Colour -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Hair Colour</h5>
+          <p class="small-muted">Full hair colouring</p>
+          <p class="price" data-price="1500">Starting ₹1500</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Bridal Makeup -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Bridal Makeup</h5>
+          <p class="small-muted">Complete bridal makeup package</p>
+          <p class="price" data-price="8000">Starting ₹8000</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Facials & Skincare -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Facials & Skincare</h5>
+          <p class="small-muted">Glow & rejuvenation treatments</p>
+          <p class="price" data-price="1000">Starting ₹1000</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Party Makeup -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Party Makeup</h5>
+          <p class="small-muted">Stylish makeup for events & occasions</p>
+          <p class="price" data-price="2000">Starting ₹2000</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Manicure & Pedicure -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Manicure & Pedicure</h5>
+          <p class="small-muted">Hand & foot pampering treatment</p>
+          <p class="price" data-price="1000">Starting ₹1000</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Waxing & Threading -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Waxing & Threading</h5>
+          <p class="small-muted">Full grooming & hair removal</p>
+          <p class="price" data-price="100">Starting ₹100</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Relaxing Massages -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Relaxing Massages</h5>
+          <p class="small-muted">Stress relief & relaxation therapy</p>
+          <p class="price" data-price="4000">Starting ₹4000</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Deep Conditioning Treatments -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Deep Conditioning Treatments</h5>
+          <p class="small-muted">Hair repair & nourishment</p>
+          <p class="price" data-price="3000">Starting ₹3000</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+      <!-- Nail Art & Extensions -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <h5>Nail Art & Extensions</h5>
+          <p class="small-muted">Trendy designs & nail enhancement</p>
+          <p class="price" data-price="500">Starting ₹500</p>
+          <button class="btn btn-outline-primary btn-sm select-service mt-2">Select</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+.services-bg-slider {
+  position: absolute;
+  top: 0; left: 0; width: 300%; height: 100%;
+  display: flex;
+  animation: slide-bg 90s linear infinite;
+  z-index: 0;
+  opacity: 0.15;
+  filter: blur(5px);
+  pointer-events: none;
+  transform: translateY(0);
+  transition: transform 0.1s linear;
+}
+
+.services-bg-slider img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+@keyframes slide-bg {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-66.666%); }
+}
+
+#services .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  .services-bg-slider { opacity: 0.12; }
+  .services-bg-slider img { margin-right: 15px; }
+}
+@media (max-width: 768px) {
+  .services-bg-slider { opacity: 0.1; }
+  .services-bg-slider img { height: 120%; margin-right: 10px; }
+}
+@media (max-width: 576px) {
+  .services-bg-slider { opacity: 0.08; animation: slide-bg 120s linear infinite; }
+  .services-bg-slider img { height: 150%; margin-right: 8px; }
+}
+</style>
+
+<!-- JS -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.services-bg-slider');
+  const images = [
+    'images/gallery1.jpg',
+    'images/gallery2.jpg',
+    'images/gallery3.jpg',
+    'images/gallery4.jpg',
+    'images/gallery5.jpg'
+  ];
+
+  // Add images
+  images.forEach(src => { const img = document.createElement('img'); img.src = src; slider.appendChild(img); });
+  // Duplicate for smooth loop
+  images.forEach(src => { const img = document.createElement('img'); img.src = src; slider.appendChild(img); });
+  images.forEach(src => { const img = document.createElement('img'); img.src = src; slider.appendChild(img); });
+
+  // Parallax effect
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    slider.style.transform = `translateY(${scrollTop * 0.2}px)`;
+  });
+});
+</script>
+
+
+  <!-- Booking Section -->
+
+  <!-- Booking Form -->
+  <section id="booking" class="section">
+    <div class="container">
+      <h2 class="mb-4">Book an Appointment</h2>
+
+      <div class="row">
+        <div class="col-lg-7">
+          <form id="bookingForm" class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Full name *</label>
+              <input id="name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone *</label>
+              <input id="phone" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input id="email" type="email" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Select date *</label>
+              <input id="date" type="date" class="form-control" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Selected services</label>
+              <div id="selectedServices">No services selected</div>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Minimum booking</label>
+              <input id="minAmount" class="form-control" readonly value="₹1000">
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Total (auto)</label>
+              <input id="totalAmount" class="form-control" readonly value="₹0">
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+              <div class="form-check">
+                <input id="payFull" class="form-check-input" type="checkbox">
+                <label class="form-check-label" for="payFull">Pay full now</label>
+                <div class="small-muted">Or pay a deposit (25% or min ₹1000)</div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Notes</label>
+              <textarea id="notes" class="form-control" rows="2"></textarea>
+            </div>
+
+            <div class="col-12">
+              <p class="small-muted">Choose a payment method</p>
+              <div id="paymentButtons" class="d-flex gap-2 align-items-start">
+                <button id="razorpayBtn" type="button" class="btn btn-success">Pay with Razorpay</button>
+                <div id="paypal-container"></div>
+                <button id="stripeBtn" type="button" class="btn btn-primary">Pay with Stripe</button>
+              </div>
+              <div class="mt-2 small-muted">Payments processed securely. For full verification implement the small server endpoints described below.</div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <h5>Order summary</h5>
+            <div id="summaryList" class="mb-3 small-muted">No services selected</div>
+            <div><strong>Amount to pay: </strong><span id="summaryAmount">₹0</span></div>
+            <div class="mt-3"><span class="badge-min">Minimum ₹1000</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-3 text-center">
+  <div class="container">
+    <p>&copy; 2023 NP Beauty Creation. All rights reserved.</p>
+    <p>Follow us: @npbeautycreation — Email: info8npbeautycreation@gmail.com<p/>
+    <p>
+        <li class="nav-item"><a class="nav-link active" href="policies.html">Privacy & Terms</a></li>
+    </p>
+  </div>
+</footer>
+
+  <!-- Libraries -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!-- Booking & Payment Script -->
+
+  <script src="js/script.js"></script>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <!-- PayPal SDK is loaded dynamically below using your client-id -->
+
+<script>
+/*
+  This front-end file is based on the file you uploaded. (source: uploaded index.html). :contentReference[oaicite:1]{index=1}
+
+  What this script does:
+  - Lets user select services (toggles)
+  - Auto-calculates sum and enforces a minimum booking amount of ₹1000
+  - Option to pay full or pay deposit (25% or minimum ₹1000)
+  - Triggers Razorpay / PayPal / Stripe flows using server endpoints (placeholders)
+  - IMPORTANT: You must implement the server endpoints below (examples in Node/Express can be provided)
+*/
+
+const CONFIG = {
+  MIN_BOOKING: 1000,              // INR min booking
+  CURRENCY: 'INR',
+  RAZORPAY_KEY_ID: 'rzp_test_YOUR_KEY',   // replace or serve from server
+  PAYPAL_CLIENT_ID: 'AQ7TZDoLK72uM6KvxNtpL9qh6Swvg8iLnC9cQAtcmwVlR3SAr4gQn2fokUxEZjKg6PBOMUy89DrPYgKQ', // replace
+  STRIPE_PUBLIC_KEY: 'pk_live_51P31cn09e2v364nuJC8gcLGwb808rnW8CRTeC7cuoqOHDBfebn8l2W9WIRMpE1hoDFsTek0yEMIB5HZWvh8rjcxi00YKObQ1fX' // replace
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  // elements
+  const serviceBtns = document.querySelectorAll('.select-service');
+  const selectedServicesEl = document.getElementById('selectedServices');
+  const totalAmountInput = document.getElementById('totalAmount');
+  const minAmountInput = document.getElementById('minAmount');
+  const payFullCheckbox = document.getElementById('payFull');
+  const summaryList = document.getElementById('summaryList');
+  const summaryAmount = document.getElementById('summaryAmount');
+
+  let selectedServices = [];
+
+  minAmountInput.value = `₹${CONFIG.MIN_BOOKING}`;
+  updateUI();
+
+  // Attach handlers for service selection
+  serviceBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = btn.closest('.service-card');
+      const name = card.querySelector('h5').textContent.trim();
+      const price = Number(card.querySelector('.price').dataset.price);
+      const idx = selectedServices.findIndex(s => s.name === name);
+      if (idx === -1){
+        selectedServices.push({name, price});
+        btn.classList.remove('btn-outline-primary');
+        btn.classList.add('btn-primary');
+        btn.textContent = 'Selected';
+      } else {
+        selectedServices.splice(idx,1);
+        btn.classList.remove('btn-primary');
+        btn.classList.add('btn-outline-primary');
+        btn.textContent = 'Select';
+      }
+      updateUI();
+    });
+  });
+
+  payFullCheckbox.addEventListener('change', updateUI);
+
+  function calcTotal(){
+    const sum = selectedServices.reduce((a,b)=>a+b.price,0);
+    if (payFullCheckbox.checked) return sum;
+    // deposit: 25% of sum or minimum booking
+    const deposit = Math.ceil(sum * 0.25);
+    return Math.max(deposit || 0, CONFIG.MIN_BOOKING);
+  }
+
+  function updateUI(){
+    if(selectedServices.length === 0){
+      selectedServicesEl.textContent = 'No services selected';
+      summaryList.textContent = 'No services selected';
+    } else {
+      selectedServicesEl.innerHTML = selectedServices.map(s => `${s.name} — ₹${s.price}`).join('<br>');
+      summaryList.innerHTML = selectedServices.map(s => `${s.name} — ₹${s.price}`).join('<br>');
+    }
+    const total = calcTotal();
+    totalAmountInput.value = `₹${total}`;
+    summaryAmount.textContent = `₹${total}`;
+  }
+
+  // Collect form data
+  function collectForm(){
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const date = document.getElementById('date').value;
+    const notes = document.getElementById('notes').value.trim();
+    if(!name || !phone || !date || selectedServices.length===0){
+      alert('Please fill required fields: name, phone, date and select at least one service.');
+      return null;
+    }
+    return {
+      name, phone, email, date, notes,
+      services: selectedServices,
+      amount: calcTotal(),
+      payFull: payFullCheckbox.checked,
+      currency: CONFIG.CURRENCY
+    };
+  }
+
+  // Razorpay flow
+  document.getElementById('razorpayBtn').addEventListener('click', async (ev) => {
+    ev.preventDefault();
+    const data = collectForm();
+    if(!data) return;
+
+    // Create order on your server (server must use RAZORPAY_SECRET_KEY)
+    // POST /create-razorpay-order { amountInPaise, currency, bookingData }
+    try {
+      const amountPaise = data.amount * 100;
+      const resp = await axios.post('/create-razorpay-order', {
+        amount: amountPaise,
+        currency: CONFIG.CURRENCY,
+        booking: data
+      });
+      const order = resp.data; // { id, amount, currency }
+
+      const options = {
+        key: CONFIG.RAZORPAY_KEY_ID,
+        amount: order.amount,
+        currency: order.currency,
+        name: 'NP Beauty Creation',
+        description: `Booking for ${data.name}`,
+        order_id: order.id,
+        prefill: { name: data.name, contact: data.phone, email: data.email },
+        handler: async function (razorResp) {
+          // razorResp contains razorpay_payment_id, razorpay_order_id, razorpay_signature
+          // Verify signature on server:
+          try {
+            const verify = await axios.post('/verify-razorpay-payment', {
+              razor: razorResp,
+              booking: data
+            });
+            if(verify.data && verify.data.success){
+              window.location.href = '/success.html';
+            } else {
+              window.location.href = '/failure.html';
+            }
+          } catch (err) {
+            console.error('Verify error', err);
+            window.location.href = '/failure.html';
+          }
+        },
+        modal: {
+          ondismiss: function(){ /* user closed modal */ }
+        }
+      };
+      const rzp = new Razorpay(options);
+      rzp.open();
+    } catch (err) {
+      console.error(err);
+      alert('Failed to initialize Razorpay order. Make sure /create-razorpay-order endpoint exists.');
+    }
+  });
+
+  // PayPal flow (client-side create). We dynamically load the SDK so you can set client id in CONFIG.
+  // ---- Replace your current PayPal block with this ----
+(function renderPayPal() {
+  const container = document.getElementById('paypal-container');
+
+  if (!CONFIG.PAYPAL_CLIENT_ID || CONFIG.PAYPAL_CLIENT_ID.includes('YOUR')) {
+    container.innerHTML = '<button class="btn btn-outline-dark" disabled title="Set PAYPAL_CLIENT_ID in CONFIG to enable">PayPal (configure)</button>';
+    return;
+  }
+
+  // Load SDK with your client-id (live or sandbox depending on your key)
+  const s = document.createElement('script');
+  s.src = `https://www.paypal.com/sdk/js?client-id=${CONFIG.PAYPAL_CLIENT_ID}&currency=${CONFIG.CURRENCY}`;
+  s.onload = () => {
+    // Render buttons that use server-created orders
+    // createOrder calls your server to create an order and returns orderID
+    // onApprove calls your server to capture/verify
+    // onError shows error to user
+    // eslint-disable-next-line no-undef
+    paypal.Buttons({
+      style: { layout: 'vertical', color: 'gold', shape: 'rect', label: 'paypal' },
+
+      // Create order by asking your server to create one
+      createOrder: function(data, actions) {
+        const form = collectForm();
+        if (!form) {
+          alert('Complete the form before paying.');
+          return;
+        }
+        // Call server to create PayPal order
+        return axios.post('/create-paypal-order', {
+          booking: form,
+          amount: form.amount,
+          currency: CONFIG.CURRENCY
+        }).then(function(res) {
+          // Server should return { orderID: '...' }
+          if (res.data && res.data.orderID) return res.data.orderID;
+          console.error('No orderID in /create-paypal-order response', res.data);
+          throw new Error('Failed to create PayPal order on server');
+        }).catch(function(err){
+          console.error('create-paypal-order error', err);
+          alert('Could not initialize PayPal payment. Try again later.');
+          throw err;
+        });
+      },
+
+      // When buyer approves, capture on server (recommended)
+      onApprove: function(data, actions) {
+        // data.orderID is the order created earlier
+        return axios.post('/capture-paypal-payment', {
+          orderID: data.orderID,
+          booking: collectForm() // include booking details so server can save
+        }).then(function(res) {
+          if (res.data && res.data.success) {
+            window.location.href = '/success.html';
+          } else {
+            console.error('PayPal capture verification failed', res.data);
+            window.location.href = '/failure.html';
+          }
+        }).catch(function(err) {
+          console.error('capture-paypal-payment error', err);
+          window.location.href = '/failure.html';
+        });
+      },
+
+      onError: function(err) {
+        console.error('PayPal Buttons onError', err);
+        alert('An error occurred while processing PayPal payment.');
+      },
+
+      onCancel: function(data) {
+        // Optional: handle user cancellation
+        alert('Payment cancelled.');
+      }
+
+    }).render('#paypal-container');
+  };
+  s.onerror = function(e){
+    console.error('Failed to load PayPal SDK', e);
+    container.innerHTML = '<button class="btn btn-outline-dark" disabled>PayPal (failed to load)</button>';
+  };
+  document.body.appendChild(s);
+})();
+
+
+  // Stripe flow (redirect to Checkout) - requires server endpoint to create session
+  document.getElementById('stripeBtn').addEventListener('click', async (ev) => {
+    ev.preventDefault();
+    const form = collectForm();
+    if(!form) return;
+    try {
+      // Server should create a Stripe Checkout session and return { id: sessionId }
+      const resp = await axios.post('/create-stripe-session', { booking: form, amount: form.amount, currency: CONFIG.CURRENCY });
+      const sessionId = resp.data.id;
+      if(!sessionId) throw new Error('Missing session id');
+      const stripe = Stripe(CONFIG.STRIPE_PUBLIC_KEY);
+      await stripe.redirectToCheckout({ sessionId });
+    } catch (err) {
+      console.error(err);
+      alert('Stripe initialization failed. Make sure /create-stripe-session exists on your server.');
+    }
+  });
+
+}); // DOMContentLoaded
+
+</script>
+
+</body>
+</html>

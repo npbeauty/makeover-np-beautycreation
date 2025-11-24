@@ -1,0 +1,55 @@
+:root {
+--accent: #ff4da6;
+--muted: #6c757d;
+--bg: #fff7fb;
+}
+
+* { box-sizing: border-box; }
+  body {
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", Arial;
+  margin: 0;
+  color: #222;
+  background: var(--bg);
+  }
+  .hero {
+  background: linear-gradient(135deg,#ff69b4 0%, #ffd700 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+  }
+  .hero h1 { font-family:'Playfair Display',serif; font-size:2.4rem; margin-bottom:.4rem; }
+  .section { padding:48px 0; }
+  .service-card {
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  padding:18px;
+  transition:transform .25s;
+  background:#fff;
+  }
+  .service-card:hover { transform:translateY(-6px); }
+  .price { font-weight:700; color:var(--accent); }
+  #selectedServices {
+  min-height:2rem;
+  padding:.6rem;
+  border:1px dashed #eee;
+  border-radius:6px;
+  background:#fff;
+  }
+  footer {
+  background:#222;
+  color:#fff;
+  padding:28px 0;
+  text-align:center;
+  margin-top:36px;
+  }
+  .small-muted { color:var(--muted); font-size:.9rem; }
+  .badge-min {
+  background:#fff;
+  color:#ff4da6;
+  border:1px solid #ff4da6;
+  padding:.25rem .5rem;
+  border-radius:999px;
+  }
+  @media (min-width:992px){
+  .services-grid .service-card { height:100%; }
+  }

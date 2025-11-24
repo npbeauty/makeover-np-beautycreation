@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NP Beauty Creation — Home</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    :root{--accent:#ff4da6;--muted:#6c757d;--bg:#fff7fb}
+    *{box-sizing:border-box}
+    body{font-family: Roboto, system-ui, -apple-system, "Segoe UI", Arial; margin:0; color:#222; background:#fff;}
+    .hero{background:linear-gradient(135deg,#ff69b4 0%, #ffd700 100%); color:#fff; text-align:center; padding:80px 0;}
+    .hero h1{font-family:'Playfair Display',serif; font-size:2.4rem; margin-bottom:.4rem}
+    .section{padding:48px 0}
+    .service-card{border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); padding:18px; transition:transform .25s; background:#fff}
+    .service-card:hover{transform:translateY(-6px)}
+    .price{font-weight:700; color:var(--accent)}
+    #selectedServices{min-height:2rem; padding:.6rem; border:1px dashed #eee; border-radius:6px; background:#fff}
+    footer{background:#222; color:#fff; padding:28px 0; text-align:center; margin-top:36px}
+    .small-muted{color:var(--muted); font-size:.9rem}
+    .badge-min{background:#fff;color:#ff4da6;border:1px solid #ff4da6;padding:.25rem .5rem;border-radius:999px}
+    @media (min-width:992px){
+      .services-grid .service-card{height:100%}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">NP Beauty Creation</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="policies.html">Policies</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to NP Beauty Creation</h1>
+      <p style="font-size:1.05rem; margin:0">Transform your look with our expert beauty services — book online in seconds</p>
+      <a href="#booking" class="btn btn-light mt-3">Book Now</a>
+    </div>
+  </section>
+
+
+<!-- FAQ Section -->
+<section class="section bg-light">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion mt-3" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">What payment methods do you accept?</button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">We accept Razorpay, PayPal, and Stripe (credit/debit cards).</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">Do I need to book in advance?</button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes, we recommend booking at least 24 hours in advance.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">Can I cancel or reschedule my appointment?</button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes, cancellations or rescheduling can be done 12 hours before your appointment.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-3 text-center">
+  <div class="container">
+    <p>&copy; 2023 NP Beauty Creation. All rights reserved.</p>
+    <p>Follow us: @npbeautycreation — Email: info8npbeautycreation@gmail.com<p/>
+    <p>
+        <li class="nav-item"><a class="nav-link active" href="policies.html">Privacy & Terms</a></li>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
